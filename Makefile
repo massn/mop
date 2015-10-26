@@ -1,8 +1,8 @@
 run:
-	go run ./cmd/mop.go
+	go run ./mop/mop.go
 
 build:
-	go build ./cmd/mop.go
+	go build -o ./_build/mop ./mop/mop.go
 
 install:
-	go install github.com/michaeldv/mop/cmd
+	go install ./mop
